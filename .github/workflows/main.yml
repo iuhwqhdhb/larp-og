@@ -114,9 +114,9 @@ jobs:
           tag_name: v1.0.${{ github.run_number }}
           files: Phantom-Demo.ipa
           body: |
-            Phantom Demo — unsigned iOS build 103.
+            Phantom Demo - unsigned iOS build 103.
 
             Not code-signed. Sideload with Sideloadly or AltStore using your
             Apple ID (free accounts expire every 7 days).
 
-            UI simulation only — no blockchain, no keys, no real funds.
+            UI simulation only - no blockchain, no keys, no real funds.
