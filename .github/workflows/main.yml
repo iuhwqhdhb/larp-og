@@ -61,11 +61,17 @@ jobs:
           JSON
           cat > capacitor.config.json <<'JSON'
           {
-            "appId": "com.demo.phantomdemo",
-            "appName": "Phantom Demo",
+            "appId": "com.demo.phantom103",
+            "appName": "Phantom",
             "webDir": "www",
-            "ios": { "contentInset": "never", "backgroundColor": "#000000" },
-            "backgroundColor": "#000000"
+            "ios": { "contentInset": "never", "backgroundColor": "#0B0B0D" },
+            "backgroundColor": "#0B0B0D",
+            "plugins": {
+              "LocalNotifications": {
+                "iconColor": "#AA9EF0",
+                "sound": "beep.wav"
+              }
+            }
           }
           JSON
 
@@ -108,7 +114,7 @@ jobs:
           tag_name: v1.0.${{ github.run_number }}
           files: Phantom-Demo.ipa
           body: |
-            Phantom Demo — unsigned iOS build.
+            Phantom Demo — unsigned iOS build 103.
 
             Not code-signed. Sideload with Sideloadly or AltStore using your
             Apple ID (free accounts expire every 7 days).
